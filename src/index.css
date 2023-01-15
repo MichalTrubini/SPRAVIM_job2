@@ -4,11 +4,16 @@
   --textColor: #323232;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Azeret Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bodyBackground);
+  scroll-behavior: smooth;
 }
 
 * {
@@ -25,4 +30,16 @@ h1, h2 {
 p {
   font-weight: 400;
   color: var(--textColor);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 144rem;
+}
+
+.sitePadding {
+  padding: 0 1.2rem;
 }

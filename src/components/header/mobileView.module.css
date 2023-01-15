@@ -1,0 +1,7 @@
+.mobileContainer {
+  padding-top: 2.9rem;
+  padding-bottom: 2.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
