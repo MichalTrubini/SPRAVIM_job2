@@ -23,6 +23,7 @@
 .listItem {
     padding: 1.5rem 0;
     border-bottom: 1px solid #d5dceb;
+    display: flex;
 }
 
 .listItem:last-child {
@@ -34,10 +35,12 @@
     font-weight: 600;
     line-height: 1.5;
     color: #1c1c1c;
+    display: inline;
 }
 
 .listItemNumber {
     font-size: 1.4rem;
     color: #323232;
     padding-right: 0.8rem;
+    padding-top: 0.3rem;
 }

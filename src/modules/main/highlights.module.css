@@ -1,0 +1,42 @@
+.highlights {
+    background-color: #cdcfd0;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5.2rem;
+}
+
+.heading, .textHeading {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    margin-bottom: 2.4rem;
+    line-height: 1.25;
+}
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.textHeading {
+    margin-bottom: 1.6rem;
+}
+
+.text {
+    line-height: 1.5;
+}
+
+.link {
+    background-color: #323232;
+    width: fit-content;
+    padding: 1.6rem 3.2rem;
+    border-radius: 2.6rem;
+}
+
+.linkText {
+    color: #fafafa;
+    font-size: 1.8rem;
+    font-weight: 600;
+}

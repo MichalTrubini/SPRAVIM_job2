@@ -20,19 +20,19 @@ const Intro = () => {
         <ul className={styles.list}>
           <li className={styles.listItem}>
             <span className={styles.listItemNumber}>01.</span>
-            <span className={styles.listItemText}>Analyzovanie polohy vášho tela</span>
+            <h3 className={styles.listItemText}>Analyzovanie polohy vášho tela</h3>
           </li>
           <li className={styles.listItem}>
             <span className={styles.listItemNumber}>02.</span>
-            <span className={styles.listItemText}>Analyzovanie rôznych pohybových dát</span>
+            <h3 className={styles.listItemText}>Analyzovanie rôznych pohybových dát</h3>
           </li>
           <li className={styles.listItem}>
             <span className={styles.listItemNumber}>03.</span>
-            <span className={styles.listItemText}>Analyzovanie fyziologických procesov</span>
+            <h3 className={styles.listItemText}>Analyzovanie fyziologických procesov</h3>
           </li>
           <li className={styles.listItem}>
             <span className={styles.listItemNumber}>04.</span>
-            <span className={styles.listItemText}>Vyhodnocovanie získaných dát</span>
+            <h3 className={styles.listItemText}>Vyhodnocovanie získaných dát</h3>
           </li>
         </ul>
       </div>
