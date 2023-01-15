@@ -22,6 +22,10 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1, h2 {
   font-weight: 600;
   color: var(--headingsColor);
@@ -30,6 +34,7 @@ h1, h2 {
 p {
   font-weight: 400;
   color: var(--textColor);
+  font-size: 1.4rem;
 }
 
 li {
@@ -38,8 +43,28 @@ li {
 
 .container {
   max-width: 144rem;
+  margin: auto;
+  position: relative;
 }
 
 .sitePadding {
   padding: 0 1.2rem;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width:768px) {
+  .sitePadding {
+    padding: 0 2.4rem;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .sitePadding {
+    padding: 0 7.2rem;
+  }
 }

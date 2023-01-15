@@ -1,0 +1,18 @@
+.mobileMenu {
+    width: 100vw;
+    height: 100vh;
+    padding: 2.4rem 1.2rem;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: #212121;
+    background-image: url('../../../assets/pattern-mobil-menu.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+.closeContainer {
+    text-align: right;
+    margin-bottom: 8.7rem;
+}

@@ -1,0 +1,103 @@
+.hero {
+  padding-top: 5rem;
+  padding-bottom: 9.5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.imageContainer {
+  position: absolute;
+  width: calc(100vw - 2.4rem);
+  max-width: 37.5rem;
+  top: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pattern {
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  top: 35%;
+  width: 35%;
+}
+
+.heading {
+  color: #fafafa;
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  line-height: 1.25;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 99;
+}
+
+.link {
+  background-color: #cdea50;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 26px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1c1c1c;
+  position: relative;
+  z-index: 9;
+}
+
+.wordFix {
+  display: block;
+}
+
+@media screen and (min-width: 524px) {
+  .imageContainer {
+    position: absolute;
+    width: calc(100vw - 2.4rem);
+    max-width: 37.5rem;
+    top: 6rem;
+    right: 2.4rem;
+    left: unset;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .imageContainer {
+    position: absolute;
+    width: 100%;
+    max-width: 50vw;
+    top: unset;
+    bottom: 0;
+    right: 2.4rem;
+  }
+  .heading {
+    font-size: 3.6rem;
+    max-width: 70rem;
+  }
+
+  .wordFix {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .imageContainer {
+    position: absolute;
+    width: 100%;
+    max-width: 80rem;
+    top: unset;
+    bottom: 0;
+    right: 0;
+  }
+  .heading {
+    font-size: 4.4rem;
+    max-width: 80rem;
+  }
+  .pattern {
+    right: 7rem;
+    top: 45%;
+  }
+}
