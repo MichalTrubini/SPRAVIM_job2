@@ -1,6 +1,7 @@
 import Account from "./components/account";
 import Menu from "./components/menu";
-import SiteLogo from "./siteLogo";
+import SiteLogo from "./components/siteLogo";
+
 import styles from './desktopView.module.css'
 
 const DesktopView = () => {
