@@ -57,6 +57,10 @@ li {
   justify-content: space-between;
 }
 
+.siteMainNav__fix {
+  background-color:#212121;
+}
+
 @media screen and (min-width:768px) {
   .sitePadding {
     padding: 0 2.4rem;
