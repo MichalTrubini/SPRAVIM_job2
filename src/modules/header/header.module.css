@@ -1,18 +1,23 @@
 .header {
-    background: url('../../assets/bg-picture@2x.webp') no-repeat;
-    background-size: cover;
+  background: url("../../assets/bg-picture@2x.webp") no-repeat;
+  background-size: cover;
+}
+
+.navContainer {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 
 .nav {
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    max-width: 144rem;
+  margin: auto;
+  width: 100%;
+  max-width: 144rem;
 }
 
-@media screen and (min-width:768px) {
-    .header {
-        background: url('../../assets/bg-dt-picture@2x.webp') no-repeat;
-        background-size: cover;
-    }
+@media screen and (min-width: 768px) {
+  .header {
+    background: url("../../assets/bg-dt-picture@2x.webp") no-repeat;
+    background-size: cover;
+  }
 }

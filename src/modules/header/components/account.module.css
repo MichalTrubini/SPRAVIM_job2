@@ -6,11 +6,11 @@
     display: inline-block;
     padding: 1.2rem 2.6rem;
     border-radius: 2.1rem;
-    border: solid 1px #cdea50;
+    border: solid 1px var(--limeGreen)
 }
 
 .text {
-    color: #cdea50;
+    color: var(--limeGreen);
     font-size: 1.6rem;
     font-weight: 600;
 } 

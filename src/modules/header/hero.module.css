@@ -37,7 +37,7 @@
 }
 
 .link {
-  background-color: #cdea50;
+  background-color: var(--limeGreen);
   display: inline-block;
   padding: 1.6rem 3.2rem;
   border-radius: 26px;

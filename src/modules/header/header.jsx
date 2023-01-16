@@ -32,8 +32,10 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
+      <div id="siteMainNav" className={styles.navContainer}>
+        <nav className={styles.nav}>{width < mobileBreakpoint ? <MobileView /> : <DesktopView />}</nav>
+      </div>
       <div className="container">
-        <nav id='siteMainNav' className={styles.nav}>{width < mobileBreakpoint ? <MobileView /> : <DesktopView />}</nav>
         <Hero />
       </div>
     </header>
