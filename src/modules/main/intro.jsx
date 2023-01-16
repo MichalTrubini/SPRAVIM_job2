@@ -3,7 +3,7 @@ import imageShirt from "../../assets/ake-problemy-riesime@2x.webp";
 
 const Intro = () => {
   return (
-    <section id='introID' className={`${styles.intro} sitePadding`}>
+    <section id="introID" className={`${styles.intro} sitePadding`}>
       <div className={styles.top}>
         <div className={styles.imageContainer}>
           <img src={imageShirt} alt="Ake problemy riesime" />
@@ -32,7 +32,10 @@ const Intro = () => {
           </li>
           <li className={styles.listItem}>
             <span className={styles.listItemNumber}>04.</span>
-            <h3 className={styles.listItemText}>Vyhodnocovanie získaných dát</h3>
+            <div>
+              <h3 className={styles.listItemText}>Vyhodnocovanie získaných dát</h3>
+              <p className={styles.note}>A mnoho ďalšieho...</p>
+            </div>
           </li>
         </ul>
       </div>

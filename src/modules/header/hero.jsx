@@ -8,8 +8,25 @@ const Hero = () => {
   const { width } = useWindowDimensions();
   const mobileBreakpoint = 1024;
 
+  const scrollHandler = (item) => {
+    const element = document.getElementById(item);
+    const siteMainNav = document.getElementById("siteMainNav");
+
+    let headerOffset = siteMainNav.offsetHeight;
+    let elementPosition = element.getBoundingClientRect().top;
+    let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    function windowScroll(item) {
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+    windowScroll();
+  };
+
   return (
-    <div id='heroID' className={`${styles.hero} sitePadding`}>
+    <div id="heroID" className={`${styles.hero} sitePadding`}>
       <div className={styles.imageContainer}>
         {width < mobileBreakpoint ? (
           <img src={shirtIMGMobile} alt="heroImage" />
@@ -23,7 +40,14 @@ const Hero = () => {
         <span className={styles.wordFix}>a textílie pre </span>lepšie pochopenie{" "}
         <span className={styles.wordFix}>našej fyziológie</span>
       </h1>
-      <p className={styles.link}>Aké problémy riešime?</p>
+      <p
+        className={styles.link}
+        onClick={() => {
+          scrollHandler("introID");
+        }}
+      >
+        Aké problémy riešime?
+      </p>
     </div>
   );
 };

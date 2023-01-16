@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./menu.module.css";
 
 const Menu = (props) => {
-
   const [selected, setSelected] = useState("home");
 
   const scrollHandler = (item) => {
@@ -13,7 +12,7 @@ const Menu = (props) => {
     let elementPosition = element.getBoundingClientRect().top;
     let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-    function windowScroll() {
+    function windowScroll(item) {
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth",
@@ -26,7 +25,6 @@ const Menu = (props) => {
       }, 500);
     } else windowScroll();
   };
-
   const close = () => {
     if (window.innerWidth < 769) {
       props.onClickClose();

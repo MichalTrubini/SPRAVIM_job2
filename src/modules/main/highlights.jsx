@@ -7,15 +7,37 @@ import useWindowDimensions from "../../util/WindowDimensions";
 const Highlights = () => {
   const { width } = useWindowDimensions();
 
-  const mobileBreakpoint = 1024
+  const mobileBreakpoint = 1024;
+
+  const scrollHandler = (item) => {
+    const element = document.getElementById(item);
+    const siteMainNav = document.getElementById("siteMainNav");
+
+    let headerOffset = siteMainNav.offsetHeight;
+    let elementPosition = element.getBoundingClientRect().top;
+    let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    function windowScroll(item) {
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+    windowScroll();
+  };
 
   const linkElement = (
-    <div className={styles.link}>
+    <div
+      className={styles.link}
+      onClick={() => {
+        scrollHandler("footerID");
+      }}
+    >
       <p className={styles.linkText}>Zaujíma ma to</p>
     </div>
   );
   return (
-    <section id='highlightsID' className={`${styles.highlights} sitePadding`}>
+    <section id="highlightsID" className={`${styles.highlights} sitePadding`}>
       <div className={styles.header}>
         <h2 className={styles.heading}>Pre koho je Skinekt prínosom</h2>
         {width > mobileBreakpoint ? linkElement : null}
