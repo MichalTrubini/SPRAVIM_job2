@@ -11,7 +11,7 @@ const MobileMenu = (props) => {
 
   return (
     <>
-      <div className={styles.mobileMenu}>
+      <div className={`${styles.mobileMenu} ${props.className}`}>
         {width < mobileBreakpoint ? (
           <div className={styles.closeContainer}>
             <img src={mobileClose} alt="close mobile menu" onClick={props.onClick} />

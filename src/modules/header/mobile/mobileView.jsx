@@ -1,12 +1,20 @@
 import hamburger from "../../../assets/menu-3-line.svg";
 import styles from "./mobileView.module.css";
 import { useState } from "react";
-import Account from "../components/account";
 import MobileMenu from "./mobileMenu";
 import SiteLogo from "../components/siteLogo";
 
 const MobileView = () => {
   const [isShown, setIsShown] = useState(false);
+  const [animate, setAnimate] = useState(false);
+
+  const mobileMenuCloseHandler = () => {
+    setAnimate(true);
+    setTimeout(() => {
+      setIsShown(false);
+      setAnimate(false);
+    }, 500);
+  };
 
   return (
     <>
@@ -20,16 +28,7 @@ const MobileView = () => {
           }}
         />
       </div>
-      {isShown ? (
-        <>
-          <MobileMenu
-            onClick={() => {
-              setIsShown(false);
-            }}
-          />
-          <Account />
-        </>
-      ) : null}
+      {isShown ? <MobileMenu className={animate ? styles.mobileMenuFadeOut : styles.mobileMenuFadeIn} onClick={mobileMenuCloseHandler} /> : null}
     </>
   );
 };

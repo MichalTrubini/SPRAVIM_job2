@@ -5,3 +5,39 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.mobileMenuFadeIn {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: slideToLeft;
+}
+
+@keyframes slideToLeft {
+  from {
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+  }
+
+  to {
+    transform: translateX(0);
+    transition: all 0.5s ease-in;
+  }
+}
+
+.mobileMenuFadeOut {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: slideToRight;
+}
+
+@keyframes slideToRight {
+  from {
+    transform: translateX(0);
+    transition: all 0.5s ease-in;
+  }
+
+  to {
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+  }
+}
