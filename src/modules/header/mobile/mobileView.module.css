@@ -6,7 +6,7 @@
   justify-content: space-between;
 }
 
-.mobileMenuFadeIn {
+.mobileMenuSlideIn {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-name: slideToLeft;
@@ -24,7 +24,7 @@
   }
 }
 
-.mobileMenuFadeOut {
+.mobileMenuSlideOut {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-name: slideToRight;

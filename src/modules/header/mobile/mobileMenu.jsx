@@ -17,7 +17,7 @@ const MobileMenu = (props) => {
             <img src={mobileClose} alt="close mobile menu" onClick={props.onClick} />
           </div>
         ) : null}
-        <Menu />
+        <Menu onClickClose={props.onClick}/>
         <Account />
       </div>
     </>

@@ -28,7 +28,7 @@ const MobileView = () => {
           }}
         />
       </div>
-      {isShown ? <MobileMenu className={animate ? styles.mobileMenuFadeOut : styles.mobileMenuFadeIn} onClick={mobileMenuCloseHandler} /> : null}
+      {isShown ? <MobileMenu className={animate ? styles.mobileMenuSlideOut : styles.mobileMenuSlideIn} onClick={mobileMenuCloseHandler} /> : null}
     </>
   );
 };
