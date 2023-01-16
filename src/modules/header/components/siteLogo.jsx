@@ -1,4 +1,4 @@
-import siteLogoIMG from '../../assets/skinekt-logo-header.svg';
+import siteLogoIMG from "../../../assets/skinekt-logo-header.svg";
 
 const SiteLogo = () => {
   return (

@@ -1,9 +1,9 @@
-import SiteLogo from "../siteLogo";
 import hamburger from "../../../assets/menu-3-line.svg";
 import styles from "./mobileView.module.css";
 import { useState } from "react";
 import Account from "../components/account";
 import MobileMenu from "./mobileMenu";
+import SiteLogo from "../components/siteLogo";
 
 const MobileView = () => {
   const [isShown, setIsShown] = useState(false);
