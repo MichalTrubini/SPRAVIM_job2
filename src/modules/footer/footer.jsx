@@ -5,7 +5,7 @@ import instagramLogo from '../../assets/instagram-line.svg';
 
 const Footer = () => {
   return (
-    <footer className={`${styles.footer} sitePadding`}>
+    <footer id='footerID' className={`${styles.footer} sitePadding`}>
       <div className={styles.container}>
         <form noValidate className={styles.form}>
           <h2 className={styles.heading}>Poďte s nami do toho</h2>

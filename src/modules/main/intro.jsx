@@ -3,7 +3,7 @@ import imageShirt from "../../assets/ake-problemy-riesime@2x.webp";
 
 const Intro = () => {
   return (
-    <section className={`${styles.intro} sitePadding`}>
+    <section id='introID' className={`${styles.intro} sitePadding`}>
       <div className={styles.top}>
         <div className={styles.imageContainer}>
           <img src={imageShirt} alt="Ake problemy riesime" />

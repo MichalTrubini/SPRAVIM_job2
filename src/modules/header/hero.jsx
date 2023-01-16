@@ -9,7 +9,7 @@ const Hero = () => {
   const mobileBreakpoint = 1024;
 
   return (
-    <div className={`${styles.hero} sitePadding`}>
+    <div id='heroID' className={`${styles.hero} sitePadding`}>
       <div className={styles.imageContainer}>
         {width < mobileBreakpoint ? (
           <img src={shirtIMGMobile} alt="heroImage" />

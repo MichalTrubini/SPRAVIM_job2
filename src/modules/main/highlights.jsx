@@ -15,7 +15,7 @@ const Highlights = () => {
     </div>
   );
   return (
-    <section className={`${styles.highlights} sitePadding`}>
+    <section id='highlightsID' className={`${styles.highlights} sitePadding`}>
       <div className={styles.header}>
         <h2 className={styles.heading}>Pre koho je Skinekt prínosom</h2>
         {width > mobileBreakpoint ? linkElement : null}
