@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./menu.module.css";
 
 const Menu = (props) => {
