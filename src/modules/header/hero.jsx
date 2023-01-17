@@ -6,7 +6,7 @@ import useWindowDimensions from "../../util/WindowDimensions";
 
 const Hero = () => {
   const { width } = useWindowDimensions();
-  const mobileBreakpoint = 1024;
+  const mobileBreakpoint = 767;
 
   const scrollHandler = (item) => {
     const element = document.getElementById(item);
@@ -28,7 +28,7 @@ const Hero = () => {
   return (
     <div id="heroID" className={`${styles.hero} sitePadding`}>
       <div className={styles.imageContainer}>
-        {width < mobileBreakpoint ? (
+        {width <= mobileBreakpoint ? (
           <img src={shirtIMGMobile} alt="heroImage" />
         ) : (
           <img src={shirtIMGDesktop} alt="heroImage" />
