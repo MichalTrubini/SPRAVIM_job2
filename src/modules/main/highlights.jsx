@@ -37,48 +37,53 @@ const Highlights = () => {
     </div>
   );
   return (
-    <section id="highlightsID" className={`${styles.highlights} sitePadding`}>
-      <div className={styles.header}>
-        <h2 className={styles.heading}>Pre koho je Skinekt prínosom</h2>
-        {width > mobileBreakpoint ? linkElement : null}
+    <section id="highlightsID" className={`${styles.highlights}`}>
+      <div className={`${styles.container} sitePadding`}>
+        <div className={styles.header}>
+          <h2 className={styles.heading}>Pre koho je Skinekt prínosom</h2>
+          {width >= mobileBreakpoint ? linkElement : null}
+        </div>
+        <div className={styles.wrapper}>
+          <div className={styles.highlight}>
+            <div className={styles.imageContainer}>
+              <img src={sportImage} alt="sport" />
+            </div>
+            <div className={styles.textContainer}>
+              <h3 className={styles.textHeading}>šport</h3>
+              <p className={styles.text}>
+                Veľmi presne monitorujme polohu tela športovca, jeho fyziologické hodnoty a celkový stav. Tieto dáta
+                transformujeme na informácie, ktoré pomáhajú športovcom zlepšovať ich výkon a techniku.
+              </p>
+            </div>
+          </div>
+          <div className={styles.highlight}>
+            <div className={styles.imageContainer}>
+              <img src={lifestyleImage} alt="lifestyle" />
+            </div>
+            <div className={styles.textContainer}>
+              <h3 className={styles.textHeading}>lifestyle</h3>
+              <p className={styles.text}>
+                Či už pracujete dlhú dobu za počítačom, alebo len chcete vedieť o sebe viac pre zlepšenie zdravia, tak
+                Skinekt vám v tomto smere pomáha získavaním dát a ich spracovaním a vyhodnocovaním.
+              </p>
+            </div>
+          </div>
+          <div className={styles.highlight}>
+            <div className={styles.imageContainer}>
+              <img src={zdravieImage} alt="zdravie" />
+            </div>
+            <div className={styles.textContainer}>
+              <h3 className={styles.textHeading}>zdravie</h3>
+              <p className={styles.text}>
+                Práve v tejto oblasti má Skinekt obrovské využitie. Lekár vie dokonale vyhodocovať dáta o pacientovi aj
+                na veľkú vzdialenosť, viete byť informovaný o stave seniorov a pod.{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {width < mobileBreakpoint ? linkElement : null}
       </div>
-      <div className={styles.highlight}>
-        <div className={styles.imageContainer}>
-          <img src={sportImage} alt="sport" />
-        </div>
-        <div className={styles.textContainer}>
-          <h3 className={styles.textHeading}>šport</h3>
-          <p className={styles.text}>
-            Veľmi presne monitorujme polohu tela športovca, jeho fyziologické hodnoty a celkový stav. Tieto dáta
-            transformujeme na informácie, ktoré pomáhajú športovcom zlepšovať ich výkon a techniku.
-          </p>
-        </div>
-      </div>
-      <div className={styles.highlight}>
-        <div className={styles.imageContainer}>
-          <img src={lifestyleImage} alt="lifestyle" />
-        </div>
-        <div className={styles.textContainer}>
-          <h3 className={styles.textHeading}>lifestyle</h3>
-          <p className={styles.text}>
-            Či už pracujete dlhú dobu za počítačom, alebo len chcete vedieť o sebe viac pre zlepšenie zdravia, tak
-            Skinekt vám v tomto smere pomáha získavaním dát a ich spracovaním a vyhodnocovaním.
-          </p>
-        </div>
-      </div>
-      <div className={styles.highlight}>
-        <div className={styles.imageContainer}>
-          <img src={zdravieImage} alt="zdravie" />
-        </div>
-        <div className={styles.textContainer}>
-          <h3 className={styles.textHeading}>zdravie</h3>
-          <p className={styles.text}>
-            Práve v tejto oblasti má Skinekt obrovské využitie. Lekár vie dokonale vyhodocovať dáta o pacientovi aj na
-            veľkú vzdialenosť, viete byť informovaný o stave seniorov a pod.{" "}
-          </p>
-        </div>
-      </div>
-      {width < mobileBreakpoint ? linkElement : null}
     </section>
   );
 };

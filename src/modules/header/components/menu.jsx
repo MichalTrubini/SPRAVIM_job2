@@ -17,14 +17,14 @@ const Menu = (props) => {
       });
     }
 
-    if (window.innerWidth < 769) {
+    if (window.innerWidth < 1025) {
       setTimeout(() => {
         windowScroll();
       }, 500);
     } else windowScroll();
   };
   const close = () => {
-    if (window.innerWidth < 769) {
+    if (window.innerWidth < 1025) {
       props.onClickClose();
     }
   };

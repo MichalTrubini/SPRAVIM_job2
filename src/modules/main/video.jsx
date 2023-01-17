@@ -2,14 +2,19 @@ import styles from "./video.module.css";
 import videoImage from "../../assets/video@2x.webp";
 
 const Video = () => {
+
   return (
     <section className={`${styles.video} sitePadding`}>
       <div>
-        <h2 className={styles.heading}>Ako to všetko dokážeme</h2>
+        <h2 className={styles.heading}>
+          Ako to <span className={styles.headingFix}>všetko dokážeme</span>
+        </h2>
       </div>
       <div>
-        <div className={styles.imageContainer}>
-          <img src={videoImage} alt="video" />
+        <div className={styles.videoWrapper}>
+          <div className={styles.imageContainer}>
+            <img src={videoImage} alt="video" />
+          </div>
         </div>
         <p className={styles.text}>
           Poskladali ste tím technologických odborníkov a nadšencov a vyvýjame elektroniku, ktorá je súčasťou textílie.

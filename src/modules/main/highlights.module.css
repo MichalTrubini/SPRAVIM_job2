@@ -2,6 +2,15 @@
     background-color: #cdcfd0;
     padding-bottom: 6rem;
     padding-top: 6rem;
+    position: relative;
+}
+
+.container {
+    max-width: 144rem;
+    margin: auto;
+}
+
+.wrapper {
     display: flex;
     flex-direction: column;
     gap: 5.2rem;
@@ -39,4 +48,52 @@
     color: #fafafa;
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .highlights {
+        padding-bottom: 14rem;
+        padding-top: 14rem;
+        height: 60rem;
+        overflow-y: scroll;
+    }
+    .highlight {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+
+    .header {
+        position: absolute;
+    }
+
+    .imageContainer {
+        width: 50%;
+    }
+
+    .textContainer {
+        width: 50%;
+        padding-right: 1rem;
+    }
+
+    .wrapper {
+        gap: 2.4rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .highlights {
+        height: 82rem;
+    }
+
+    .textContainer {
+        padding-right: 13rem;
+    }
+
 }
