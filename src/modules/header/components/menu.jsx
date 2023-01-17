@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./menu.module.css";
 
 const Menu = (props) => {
-  const [selected, setSelected] = useState("home");
 
   const scrollHandler = (item) => {
     const element = document.getElementById(item);
@@ -38,7 +37,7 @@ const Menu = (props) => {
           className={styles.listItem}
           onClick={() => {
             scrollHandler("heroID");
-            setSelected("home");
+
             close();
           }}
         >
@@ -48,7 +47,7 @@ const Menu = (props) => {
           className={styles.listItem}
           onClick={() => {
             scrollHandler("introID");
-            setSelected("home");
+ 
             close();
           }}
         >
@@ -58,7 +57,7 @@ const Menu = (props) => {
           className={styles.listItem}
           onClick={() => {
             scrollHandler("highlightsID");
-            setSelected("home");
+ 
             close();
           }}
         >
@@ -68,7 +67,7 @@ const Menu = (props) => {
           className={styles.listItem}
           onClick={() => {
             scrollHandler("footerID");
-            setSelected("home");
+
             close();
           }}
         >
