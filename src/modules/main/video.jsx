@@ -3,7 +3,6 @@ import videoImage from "../../assets/video@2x.webp";
 import ReactPlayer from "react-player";
 import { useState } from "react";
 import playIcon from "../../assets/play-fill.svg";
-import squareIcon from "../../assets/pattern-detial.svg";
 
 const Video = () => {
   const [play, setPlay] = useState(false);
