@@ -3,7 +3,6 @@ import shirtIMGMobile from "../../assets/tricko-header-mobil@2x.webp";
 import shirtIMGDesktop from "../../assets/tricko-header@2x.webp";
 import pattern from "../../assets/pattern-header.svg";
 import useWindowDimensions from "../../util/WindowDimensions";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { width } = useWindowDimensions();
