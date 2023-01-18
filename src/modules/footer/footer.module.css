@@ -19,12 +19,6 @@
   max-width: 46rem;
 }
 
-.copyright {
-  font-size: 1.2rem;
-  line-height: 1.25;
-  text-align: center;
-}
-
 .wrapper {
   background-color: rgb(255, 255, 255);
   width: 100%;
@@ -130,6 +124,7 @@
 
 .link {
   color: #1e1e1e;
+  text-decoration: underline;
 }
 
 .link:hover {

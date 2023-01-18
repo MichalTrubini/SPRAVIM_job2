@@ -6,6 +6,7 @@ import checkCircleImage from "../../assets/check-circle.svg";
 import patterFooterImage from "../../assets/pattern-footer.svg";
 import infoIcon from "../../assets/information-line.svg";
 import { Link } from "react-router-dom";
+import Copyright from "./copyright";
 
 const Footer = () => {
   const [email, setEmail] = useState({
@@ -84,7 +85,7 @@ const Footer = () => {
           <img src={instagramLogo} alt="instagram" className={styles.socialIcon}/>
         </div>
       </div>
-      <p className={styles.copyright}>© 2023 Skinekt - Power of elektronics in textile</p>
+      <Copyright />
     </footer>
   );
 };

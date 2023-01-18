@@ -1,0 +1,40 @@
+.notFound {
+    background: url('../../../assets/bg-404@2x.webp') no-repeat;
+    background-size: cover;
+    padding: 4rem 1.2rem 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.backLink {
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: #212121;
+    color: #fafafa;
+    text-align: center;
+    text-decoration:none;
+    border-radius: 26px;
+    margin-bottom: 6.2rem;
+}
+
+.text {
+    line-height: 1.5;
+    margin-bottom: 3.2rem;
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 1.6rem;
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+.pattern {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15.8rem;
+}

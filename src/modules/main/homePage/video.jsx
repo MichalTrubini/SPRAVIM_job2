@@ -7,7 +7,7 @@ import playIcon from "../../../assets/play-fill.svg";
 const Video = () => {
   const [play, setPlay] = useState(false);
 
-  const videoURL = "https://www.youtube.com/watch?v=ysz5S6PUM-U";
+  const videoURL = "https://www.youtube-nocookie.com/embed/ysz5S6PUM-U";
 
   return (
     <section className={`${styles.video} sitePadding`}>

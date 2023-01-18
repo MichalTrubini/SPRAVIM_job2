@@ -1,14 +1,13 @@
 import siteLogoIMG from "../../../assets/skinekt-logo-header.svg";
-import styles from './siteLogo.module.css'
+import styles from "./siteLogo.module.css";
 import { useHref } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SiteLogo = () => {
-
-  const urlRef = useHref()
+  const urlRef = useHref();
 
   const scrollHandler = (item) => {
-    
-    if (urlRef !== '/') return;
+    if (urlRef !== "/") return;
     const element = document.getElementById(item);
     const siteMainNav = document.getElementById("siteMainNav");
 
@@ -26,15 +25,17 @@ const SiteLogo = () => {
   };
 
   return (
-    <div className={styles.siteLogo}>
-      <img
-        src={siteLogoIMG}
-        alt="skinext"
-        onClick={() => {
-          scrollHandler("heroID");
-        }}
-      />
-    </div>
+    <Link to='/'>
+      <div className={styles.siteLogo}>
+        <img
+          src={siteLogoIMG}
+          alt="skinext"
+          onClick={() => {
+            scrollHandler("heroID");
+          }}
+        />
+      </div>
+    </Link>
   );
 };
 
