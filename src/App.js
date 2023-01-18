@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import NotFound from './pages/404';
+import PageNotFound from './pages/pageNotFound';
 import GDPR from './pages/gdpr';
 import Home from './pages/home';
 
@@ -9,7 +9,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/gdpr' element={<GDPR/>}/>
-      <Route path='/404' element={<NotFound/>}/>
+      <Route path='*' element={<PageNotFound/>} />
     </Routes>
   );
 }

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Header from "../modules/header/header";
 import NotFoundError from "../modules/main/pageNotFound/notFoundError";
 
-const NotFound = () => {
+const PageNotFound = () => {
 
   const [elHeight, setElHeight] = useState(0)
 
@@ -23,4 +23,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default PageNotFound;
