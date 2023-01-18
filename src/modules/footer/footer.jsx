@@ -43,7 +43,6 @@ const Footer = () => {
       <div className={styles.pattern}>
         <img src={patterFooterImage} alt="pattern" />
       </div>
-      <div className={styles.overlay}></div>
       <div className={styles.container}>
         <div className={styles.wrapper}>
           {email.isValid ? (

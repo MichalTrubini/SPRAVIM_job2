@@ -3,7 +3,7 @@ import videoImage from "../../assets/video@2x.webp";
 import ReactPlayer from "react-player";
 import { useState } from "react";
 import playIcon from "../../assets/play-fill.svg";
-import squareIcon from '../../assets/pattern-detial.svg';
+import squareIcon from "../../assets/pattern-detial.svg";
 
 const Video = () => {
   const [play, setPlay] = useState(false);
@@ -33,7 +33,14 @@ const Video = () => {
             </div>
           ) : null}
 
-          <ReactPlayer url={videoURL} width="100%" height="100%" className={styles.videoPlayer} playing={play} />
+          <ReactPlayer
+            url={videoURL}
+            width="100%"
+            height="100%"
+            className={styles.videoPlayer}
+            playing={play}
+            controls={true}
+          />
         </div>
         <p className={styles.text}>
           Poskladali ste tím technologických odborníkov a nadšencov a vyvýjame elektroniku, ktorá je súčasťou textílie.

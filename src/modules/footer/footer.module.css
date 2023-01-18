@@ -124,7 +124,8 @@
 
 .socialIcon:hover {
   cursor: pointer;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(224deg) brightness(102%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(224deg) brightness(102%)
+    contrast(101%);
 }
 
 @media screen and (min-width: 400px) {
@@ -151,14 +152,16 @@
   .container {
     gap: 8rem;
   }
-
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1440px) {
   .container {
     flex-direction: row;
     gap: 7rem;
     max-width: 63.6rem;
+    position: relative;
+    left: 22rem;
+    margin-bottom: 13.5rem;
   }
 
   .social {
@@ -167,10 +170,21 @@
 
   .wrapper {
     min-width: 52.6rem;
+    padding: 4.8rem;
   }
   .socialIcon {
     width: 40px;
     height: 40px;
   }
+  .button {
+    margin-bottom: 3.2rem;
+  }
 
+  .confirmation {
+    padding: 8.8rem 0;
+  }
+
+  .pattern img {
+    width: 33.8rem;
+  }
 }
