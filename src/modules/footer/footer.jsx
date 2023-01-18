@@ -81,8 +81,8 @@ const Footer = () => {
         </div>
 
         <div className={styles.social}>
-          <img src={facebookLogo} alt="facebook" className={styles.socialIcon}/>
-          <img src={instagramLogo} alt="instagram" className={styles.socialIcon}/>
+          <a href='/' target="_blank"><img src={facebookLogo} alt="facebook" className={styles.socialIcon}/></a>
+          <a href='/' target="_blank"><img src={instagramLogo} alt="instagram" className={styles.socialIcon}/></a>
         </div>
       </div>
       <Copyright />

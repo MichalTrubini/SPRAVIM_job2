@@ -34,8 +34,8 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div id="siteMainNav" className={styles.navContainer}>
-        <nav className={urlRef === '/' ? styles.nav : `${styles.nav} ${styles.navFix}`}>{width < mobileBreakpoint ? <MobileView /> : <DesktopView />}</nav>
+      <div id="siteMainNav" className={urlRef === '/' ? styles.navContainer : `${styles.navContainer} ${styles.navFix}`}>
+        <nav className={styles.nav}>{width < mobileBreakpoint ? <MobileView /> : <DesktopView />}</nav>
       </div>
       <div className="container">
         {urlRef === '/' ? <Hero /> : null}
