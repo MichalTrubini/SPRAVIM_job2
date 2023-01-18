@@ -1,20 +1,16 @@
-import Footer from "./modules/footer/footer";
-import Header from "./modules/header/header";
-import Highlights from "./modules/main/highlights";
-import Intro from "./modules/main/intro";
-import Video from "./modules/main/video";
+import { Routes, Route } from 'react-router-dom'
+import NotFound from './pages/404';
+import GDPR from './pages/gdpr';
+import Home from './pages/home';
+
 
 function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <Intro />
-        <Highlights />
-        <Video />
-      </main>
-      <Footer />
-    </>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/gdpr' element={<GDPR/>}/>
+      <Route path='/404' element={<NotFound/>}/>
+    </Routes>
   );
 }
 

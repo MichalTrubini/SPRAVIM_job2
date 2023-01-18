@@ -1,5 +1,5 @@
 import styles from "./intro.module.css";
-import imageShirt from "../../assets/ake-problemy-riesime@2x.webp";
+import imageShirt from "../../../assets/ake-problemy-riesime@2x.webp";
 
 const Intro = () => {
   return (

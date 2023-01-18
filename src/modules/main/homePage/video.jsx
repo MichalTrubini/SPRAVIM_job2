@@ -1,8 +1,8 @@
 import styles from "./video.module.css";
-import videoImage from "../../assets/video@2x.webp";
+import videoImage from "../../../assets/video@2x.webp";
 import ReactPlayer from "react-player";
 import { useState } from "react";
-import playIcon from "../../assets/play-fill.svg";
+import playIcon from "../../../assets/play-fill.svg";
 
 const Video = () => {
   const [play, setPlay] = useState(false);

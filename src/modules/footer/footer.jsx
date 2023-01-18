@@ -5,7 +5,7 @@ import { useState } from "react";
 import checkCircleImage from "../../assets/check-circle.svg";
 import patterFooterImage from "../../assets/pattern-footer.svg";
 import infoIcon from "../../assets/information-line.svg";
-
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [email, setEmail] = useState({
@@ -74,7 +74,7 @@ const Footer = () => {
                   <p className={styles.errorMessage}>Zadaný e-mail je neplatný. Skúste to ešte raz.</p>
                 </div>
               ) : null}
-              <p className={styles.gdpr}>Váš e-mail bude u nás v bezpečí.</p>
+              <p className={styles.gdpr}>Váš e-mail bude u nás v <Link to={'/gdpr'} className={styles.link}>bezpečí</Link>.</p>
             </form>
           )}
         </div>

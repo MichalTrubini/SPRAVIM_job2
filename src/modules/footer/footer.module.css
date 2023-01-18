@@ -128,6 +128,14 @@
     contrast(101%);
 }
 
+.link {
+  color: #1e1e1e;
+}
+
+.link:hover {
+  color: #066ee6;
+}
+
 @media screen and (min-width: 400px) {
   .wrapper {
     min-height: 40rem;

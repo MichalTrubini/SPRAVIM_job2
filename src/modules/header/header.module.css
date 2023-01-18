@@ -15,6 +15,10 @@
   max-width: 144rem;
 }
 
+.navFix {
+  background-color:#212121;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     background: url("../../assets/bg-dt-picture@2x.webp") no-repeat;

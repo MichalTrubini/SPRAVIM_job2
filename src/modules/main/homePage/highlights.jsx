@@ -1,8 +1,8 @@
 import styles from "./highlights.module.css";
-import zdravieImage from "../../assets/zdravie@2x.webp";
-import sportImage from "../../assets/sport@2x.webp";
-import lifestyleImage from "../../assets/lifestyle@2x.webp";
-import useWindowDimensions from "../../util/WindowDimensions";
+import zdravieImage from "../../../assets/zdravie@2x.webp";
+import sportImage from "../../../assets/sport@2x.webp";
+import lifestyleImage from "../../../assets/lifestyle@2x.webp";
+import useWindowDimensions from "../../../util/WindowDimensions";
 
 const Highlights = () => {
   const { width } = useWindowDimensions();

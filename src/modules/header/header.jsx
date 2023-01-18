@@ -4,10 +4,12 @@ import MobileView from "./mobile/mobileView";
 import DesktopView from "./desktopView";
 import Hero from "./hero";
 import { useEffect } from "react";
+import { useHref } from "react-router-dom";
 
 const Header = () => {
   const { width } = useWindowDimensions();
   const mobileBreakpoint = 1024;
+  const urlRef = useHref()
 
   useEffect(() => {
     const siteMainNav = document.getElementById("siteMainNav");
@@ -33,10 +35,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div id="siteMainNav" className={styles.navContainer}>
-        <nav className={styles.nav}>{width < mobileBreakpoint ? <MobileView /> : <DesktopView />}</nav>
+        <nav className={urlRef === '/' ? styles.nav : `${styles.nav} ${styles.navFix}`}>{width < mobileBreakpoint ? <MobileView /> : <DesktopView />}</nav>
       </div>
       <div className="container">
-        <Hero />
+        {urlRef === '/' ? <Hero /> : null}
       </div>
     </header>
   );

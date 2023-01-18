@@ -1,8 +1,14 @@
 import siteLogoIMG from "../../../assets/skinekt-logo-header.svg";
 import styles from './siteLogo.module.css'
+import { useHref } from "react-router-dom";
 
 const SiteLogo = () => {
+
+  const urlRef = useHref()
+
   const scrollHandler = (item) => {
+    
+    if (urlRef !== '/') return;
     const element = document.getElementById(item);
     const siteMainNav = document.getElementById("siteMainNav");
 

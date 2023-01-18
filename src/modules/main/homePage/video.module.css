@@ -127,7 +127,7 @@
     position: absolute;
     top: 0;
     right: -40px;
-    background: url('../../assets/pattern-detial.svg') no-repeat;
+    background: url('../../../assets/pattern-detial.svg') no-repeat;
   }
 
   .headingContainer {
