@@ -41,7 +41,6 @@ const Hero = () => {
         <span className={styles.wordFix}>a textílie pre </span>lepšie pochopenie{" "}
         <span className={styles.wordFix}>našej fyziológie</span>
       </h1>
-      <Link to='/404'><p>Link test</p></Link>
       <p
         className={styles.link}
         onClick={() => {
