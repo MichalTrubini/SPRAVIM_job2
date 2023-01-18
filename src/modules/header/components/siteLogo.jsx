@@ -1,4 +1,5 @@
 import siteLogoIMG from "../../../assets/skinekt-logo-header.svg";
+import styles from './siteLogo.module.css'
 
 const SiteLogo = () => {
   const scrollHandler = (item) => {
@@ -19,7 +20,7 @@ const SiteLogo = () => {
   };
 
   return (
-    <>
+    <div className={styles.siteLogo}>
       <img
         src={siteLogoIMG}
         alt="skinext"
@@ -27,7 +28,7 @@ const SiteLogo = () => {
           scrollHandler("heroID");
         }}
       />
-    </>
+    </div>
   );
 };
 

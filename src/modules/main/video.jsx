@@ -3,6 +3,7 @@ import videoImage from "../../assets/video@2x.webp";
 import ReactPlayer from "react-player";
 import { useState } from "react";
 import playIcon from "../../assets/play-fill.svg";
+import squareIcon from '../../assets/pattern-detial.svg';
 
 const Video = () => {
   const [play, setPlay] = useState(false);
@@ -11,12 +12,12 @@ const Video = () => {
 
   return (
     <section className={`${styles.video} sitePadding`}>
-      <div>
+      <div className={styles.headingContainer}>
         <h2 className={styles.heading}>
           Ako to <span className={styles.headingFix}>všetko dokážeme</span>
         </h2>
       </div>
-      <div>
+      <div className={styles.mainContent}>
         <div className={styles.videoWrapper}>
           {!play ? (
             <div

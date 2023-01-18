@@ -3,6 +3,7 @@
   padding-bottom: 8rem;
   max-width: 144rem;
   margin: auto;
+  position: relative;
 }
 
 .heading {
@@ -71,6 +72,7 @@
   line-height: 1.5;
 }
 
+
 .videoWrapper {
   position: relative;
   margin-bottom: 3.2rem;
@@ -101,6 +103,8 @@
   .headingFix {
     display: block;
   }
+
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -109,5 +113,25 @@
     padding-top: 12rem;
     padding-bottom: 12rem;
   }
+  .mainContent {
+    max-width: 85.6rem;
+    margin: auto;
+    position: relative;
+  }
+  
+  .mainContent::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    background: url('../../assets/pattern-detial.svg') no-repeat;
+  }
 
+  .headingContainer {
+    position: absolute;
+    left: 17rem;
+  }
 }

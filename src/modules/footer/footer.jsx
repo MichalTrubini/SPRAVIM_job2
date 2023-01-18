@@ -6,6 +6,7 @@ import checkCircleImage from "../../assets/check-circle.svg";
 import patterFooterImage from "../../assets/pattern-footer.svg";
 import infoIcon from "../../assets/information-line.svg";
 
+
 const Footer = () => {
   const [email, setEmail] = useState({
     email: "",
@@ -80,8 +81,8 @@ const Footer = () => {
         </div>
 
         <div className={styles.social}>
-          <img src={facebookLogo} alt="facebook" />
-          <img src={instagramLogo} alt="instagram" />
+          <img src={facebookLogo} alt="facebook" className={styles.socialIcon}/>
+          <img src={instagramLogo} alt="instagram" className={styles.socialIcon}/>
         </div>
       </div>
       <p className={styles.copyright}>© 2023 Skinekt - Power of elektronics in textile</p>

@@ -52,6 +52,13 @@
   display: block;
 }
 
+.link:hover {
+  cursor: pointer;
+  background-color: #1c1c1c;
+  color: var(--limeGreen);
+  outline: 1px solid var(--limeGreen);
+}
+
 @media screen and (min-width: 524px) {
   .hero {
     height: 90rem;

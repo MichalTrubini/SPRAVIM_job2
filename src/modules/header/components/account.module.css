@@ -9,6 +9,15 @@
     border: solid 1px var(--limeGreen)
 }
 
+.accountContainer:hover {
+    cursor: pointer;
+    background-color: var(--limeGreen);
+}
+
+.accountContainer:hover > .text {
+    color: #1c1c1c;
+}
+
 .text {
     color: var(--limeGreen);
     font-size: 1.6rem;

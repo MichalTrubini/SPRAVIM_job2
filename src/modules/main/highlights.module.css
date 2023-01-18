@@ -50,6 +50,16 @@
     font-weight: 600;
 }
 
+.link:hover {
+    cursor: pointer;
+    background-color: inherit;
+    outline: 1px solid #323232;
+}
+
+.link:hover > .linkText {
+    color: #323232;
+}
+
 @media screen and (min-width: 1024px) {
 
     .highlights {
