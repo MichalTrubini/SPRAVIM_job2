@@ -1,7 +1,18 @@
 import styles from "./video.module.css";
 import videoImage from "../../assets/video@2x.webp";
+import YouTube from "react-youtube";
 
 const Video = () => {
+  const videoID = "3176Sw8A0EE";
+
+  const opts = {
+    height: "290",
+    width: "350",
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    },
+  };
 
   return (
     <section className={`${styles.video} sitePadding`}>
@@ -15,6 +26,11 @@ const Video = () => {
           <div className={styles.imageContainer}>
             <img src={videoImage} alt="video" />
           </div>
+          <YouTube
+            videoId={videoID}
+            className={styles.videoItem}
+            opts={opts}
+          />
         </div>
         <p className={styles.text}>
           Poskladali ste tím technologických odborníkov a nadšencov a vyvýjame elektroniku, ktorá je súčasťou textílie.
