@@ -44,6 +44,10 @@
   border-radius: 100%;
 }
 
+.playIcon:hover {
+  cursor: pointer;
+}
+
 .playIcon img {
   position: relative;
   z-index: 100;
