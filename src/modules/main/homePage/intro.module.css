@@ -23,13 +23,14 @@
 }
 
 .listItem {
+  display: flex;
   padding: 1.5rem 0;
   border-bottom: 1px solid #d5dceb;
-  display: flex;
 }
 
-.listItem:last-child {
-  border-bottom: none;
+.listItemLast {
+  display: flex;
+  padding: 1.5rem 0;
 }
 
 .listItemText {

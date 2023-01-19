@@ -18,6 +18,10 @@
     cursor: pointer;
   }
 
+  .active > li {
+    color: var(--limeGreen);
+  }
+
   @media screen and (min-width: 768px) {
 
     .list {
