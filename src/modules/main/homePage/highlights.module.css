@@ -1,109 +1,113 @@
 .highlights {
-    background-color: #cdcfd0;
-    padding-bottom: 6rem;
-    padding-top: 6rem;
-    position: relative;
+  background-color: #cdcfd0;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
+  position: relative;
 }
 
 .container {
-    max-width: 144rem;
-    margin: auto;
+  max-width: 144rem;
+  margin: auto;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 5.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5.2rem;
 }
 
-.heading, .textHeading {
-    text-transform: uppercase;
-    font-size: 2.3rem;
-    margin-bottom: 2.4rem;
-    line-height: 1.25;
+.heading,
+.textHeading {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  margin-bottom: 2.4rem;
+  line-height: 1.25;
 }
 
 .highlight {
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
 .textHeading {
-    margin-bottom: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .text {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .link {
-    background-color: #323232;
-    width: fit-content;
-    padding: 1.6rem 3.2rem;
-    border-radius: 2.6rem;
+  background-color: #323232;
+  width: fit-content;
+  padding: 1.6rem 3.2rem;
+  border-radius: 2.6rem;
 }
 
 .linkText {
-    color: #fafafa;
-    font-size: 1.8rem;
-    font-weight: 600;
+  color: #fafafa;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .link:hover {
-    cursor: pointer;
-    background-color: inherit;
-    outline: 1px solid #323232;
+  cursor: pointer;
+  background-color: inherit;
+  outline: 1px solid #323232;
 }
 
 .link:hover > .linkText {
-    color: #323232;
+  color: #323232;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin-bottom: 3.2rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .highlights {
+    padding-bottom: 14rem;
+    padding-top: 14rem;
+    height: 60rem;
+    overflow-y: scroll;
+  }
+  .highlight {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
 
-    .highlights {
-        padding-bottom: 14rem;
-        padding-top: 14rem;
-        height: 60rem;
-        overflow-y: scroll;
-    }
-    .highlight {
-        flex-direction: row-reverse;
-        align-items: flex-end;
-    }
+  .header {
+    position: absolute;
+  }
 
-    .header {
-        position: absolute;
-    }
+  .imageContainer {
+    width: 50%;
+  }
 
-    .imageContainer {
-        width: 50%;
-    }
+  .textContainer {
+    width: 50%;
+    padding-right: 1rem;
+  }
 
-    .textContainer {
-        width: 50%;
-        padding-right: 1rem;
-    }
+  .wrapper {
+    gap: 2.4rem;
+  }
 
-    .wrapper {
-        gap: 2.4rem;
-    }
-
-    .heading {
-        font-size: 3rem;
-        width: 75%;
-    }
+  .heading {
+    font-size: 3rem;
+    width: 75%;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .highlights {
+    height: 82rem;
+  }
 
-    .highlights {
-        height: 82rem;
-    }
-
-    .textContainer {
-        padding-right: 13rem;
-    }
-
+  .textContainer {
+    padding-right: 13rem;
+  }
 }

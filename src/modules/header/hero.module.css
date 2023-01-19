@@ -15,8 +15,6 @@
   width: calc(100vw - 2.4rem);
   max-width: 37.5rem;
   top: 6rem;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .pattern {
