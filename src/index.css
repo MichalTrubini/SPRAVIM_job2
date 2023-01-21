@@ -66,6 +66,27 @@ li {
   background-color:#212121;
 }
 
+.isActive {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: slideTop;
+}
+
+@keyframes slideTop {
+  from {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+
+  to {
+    position: relative;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 @media screen and (min-width:768px) {
   .sitePadding {
     padding: 0 7.2rem;
