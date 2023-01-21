@@ -76,14 +76,16 @@ const Highlights = () => {
 
   useEffect(() => {
     const sliderElements = document.querySelectorAll('[data-act="animate"]');
-    if (positionImageOne - positionParent < 0) sliderElements[0].classList.remove("isActive");
-    else sliderElements[0].classList.add("isActive");
+    if (positionImageOne - positionParent < 0) {sliderElements[0].classList.remove("isActive")}
+    else {sliderElements[0].classList.remove("isPrev");sliderElements[0].classList.add("isActive")};
+
     if (
       sliderElements[1].previousElementSibling.classList.contains("isActive") ||
       positionImageTwo - positionParent < 0
     )
       sliderElements[1].classList.remove("isActive");
-    else if (positionImageTwo - positionParent > 0) sliderElements[1].classList.add("isActive");
+    else if (positionImageTwo - positionParent > 0) {sliderElements[1].classList.add("isActive")};
+    
     if (
       sliderElements[1].previousElementSibling.classList.contains("isActive") ||
       sliderElements[2].previousElementSibling.classList.contains("isActive")
