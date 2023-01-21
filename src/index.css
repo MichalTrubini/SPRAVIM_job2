@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Azeret Mono', monospace;
+  font-family: "Azeret Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bodyBackground);
@@ -31,7 +31,8 @@ a {
   text-decoration: none;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 600;
   color: var(--headingsColor);
 }
@@ -63,7 +64,7 @@ li {
 }
 
 .siteMainNav__fix {
-  background-color:#212121;
+  background-color: #212121;
 }
 
 .isActive {
@@ -73,21 +74,19 @@ li {
 }
 
 @keyframes slideTop {
-  from {
-    position: absolute;
+  0% {
     opacity: 0;
-    transform: translateY(6rem);
+    transform: translateY(3rem);
   }
 
-  to {
-    position: relative;
+  100% {
     opacity: 1;
     transform: translateY(0);
+    transition: opacity .8s cubic-bezier(.77,0,.175,1),transform .8s cubic-bezier(.77,0,.175,1);
   }
 }
 
-
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .sitePadding {
     padding: 0 7.2rem;
   }

@@ -70,16 +70,23 @@
 }
 
 @media screen and (min-width: 1024px) {
-
   .sectionWrapper {
     padding-top: 14rem;
   }
 
   .highlights {
     overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
     height: 50vw;
     padding-bottom: 0;
     padding-top: 0;
+  }
+
+  .highlights::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
   }
 
   .highlight {
@@ -104,12 +111,15 @@
     display: block;
     position: absolute;
     opacity: 0;
+    bottom: 0;
   }
 
   .wrapper {
     gap: 2.4rem;
   }
-
+  .description {
+    position: relative;
+  }
   .heading {
     font-size: 3rem;
     width: 75%;
