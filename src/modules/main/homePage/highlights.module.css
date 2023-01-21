@@ -1,8 +1,10 @@
 .highlights {
-  background-color: #cdcfd0;
   padding-bottom: 6rem;
   padding-top: 6rem;
   position: relative;
+}
+.sectionWrapper {
+  background-color: #cdcfd0;
 }
 
 .container {
@@ -68,11 +70,16 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .highlights {
-    padding-bottom: 14rem;
+
+  .sectionWrapper {
     padding-top: 14rem;
+  }
+
+  .highlights {
     overflow-y: scroll;
-    height: 58vw;
+    height: 50vw;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 
   .highlight {
@@ -138,7 +145,7 @@
 
 @media screen and (min-width: 1440px) {
   .highlights {
-    height: 82rem;
+    height: 68rem;
   }
 
   .headerDesktop {
