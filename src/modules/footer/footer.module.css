@@ -167,8 +167,13 @@
     margin-bottom: 13.5rem;
   }
 
+  .footer {
+    padding-top: 14rem;
+    padding-bottom: 1.6rem;
+  }
   .social {
     flex-direction: column;
+    gap: 0.2rem;
   }
 
   .wrapper {
@@ -188,6 +193,6 @@
   }
 
   .pattern img {
-    width: 33.8rem;
+    width: 36rem;
   }
 }

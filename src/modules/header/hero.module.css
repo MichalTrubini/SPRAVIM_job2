@@ -58,12 +58,6 @@
   outline: 1px solid var(--limeGreen);
 }
 
-@media screen and (min-width: 524px) {
-  .hero {
-    height: 90rem;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .imageContainer {
     position: absolute;
@@ -92,7 +86,9 @@
 }
 
 @media screen and (min-width: 1024px) {
-
+  .pattern {
+    top: 35rem;
+  }
 
 }
 

@@ -137,8 +137,8 @@ const Highlights = () => {
           </div>
         </div>
       </div>
-      <div className={styles.sectionWrapper}>
-        <section  id="highlightsID" className={styles.highlights}>
+      <div  id="highlightsID" className={styles.sectionWrapper}>
+        <section  className={styles.highlights}>
           <div className={`${styles.container} sitePadding`}>
             <div className={styles.leftWrapper}>
               <div className={`${styles.header} ${styles.headerMobile}`}>

@@ -27,6 +27,21 @@ const Hero = () => {
     },
   };
 
+  const animateWithDelay = {
+    offscreen: {
+      y: 40,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay: 0.4,
+      },
+    },
+  }
+
   const scrollHandler = (item) => {
     const element = document.getElementById(item);
     const siteMainNav = document.getElementById("siteMainNav");
@@ -58,7 +73,7 @@ const Hero = () => {
         className={styles.heading}
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{ once: false, amount: 0.1 }}
+        viewport={{ once: true, amount: 0.1 }}
         variants={animate}
       >
         <span className={styles.wordFix}>prepájame</span> elektroniku{" "}
@@ -68,8 +83,8 @@ const Hero = () => {
       <motion.p
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{ once: false, amount: 0.1 }}
-        variants={animate}
+        viewport={{ once: true, amount: 0.1 }}
+        variants={animateWithDelay}
         className={styles.link}
         onClick={() => {
           scrollHandler("introID");

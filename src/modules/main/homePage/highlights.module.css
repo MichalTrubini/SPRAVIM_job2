@@ -142,10 +142,12 @@
     max-width: 44rem;
     z-index: 99;
     box-sizing: content-box;
+    pointer-events: none;
   }
 
   .linkDesktop {
     display: block;
+    pointer-events: all;
   }
 
   .linkMobile {

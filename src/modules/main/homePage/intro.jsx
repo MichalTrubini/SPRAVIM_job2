@@ -25,8 +25,8 @@ const Intro = () => {
           <img src={imageShirt} alt="Ake problemy riesime" />
         </div>
         <div>
-          <h2 className={styles.heading}>Aké problémy riešime</h2>
-          <motion.div initial={"offscreen"} whileInView={"onscreen"} viewport={{ once: false, amount: 0.1 }}>
+          <motion.h2 initial={"offscreen"} whileInView={"onscreen"} viewport={{ once: true, amount: 0.1 }} className={styles.heading} variants={animate}>Aké problémy riešime</motion.h2>
+          <motion.div initial={"offscreen"} whileInView={"onscreen"} viewport={{ once: true, amount: 0.1 }}>
             <motion.p className={styles.text} variants={animate}>
               Tvoríme technológie integrované v odevoch, ktoré analyzujú všetko, čo človeku pomáha robiť lepšie
               rozhodnutia v rámci svojho zdravia.
@@ -40,7 +40,7 @@ const Intro = () => {
             className={styles.listItem}
             initial={"offscreen"}
             whileInView={"onscreen"}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             variants={animate}
           >
             <span className={styles.listItemNumber}>01.</span>
@@ -51,7 +51,7 @@ const Intro = () => {
             className={styles.listItem}
             initial={"offscreen"}
             whileInView={"onscreen"}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
           >
             <span className={styles.listItemNumber}>02.</span>
             <h3 className={styles.listItemText}>Analyzovanie rôznych pohybových dát</h3>
@@ -61,7 +61,7 @@ const Intro = () => {
             variants={animate}
             initial={"offscreen"}
             whileInView={"onscreen"}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
           >
             <span className={styles.listItemNumber}>03.</span>
             <h3 className={styles.listItemText}>Analyzovanie fyziologických procesov</h3>
@@ -71,7 +71,7 @@ const Intro = () => {
             variants={animate}
             initial={"offscreen"}
             whileInView={"onscreen"}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
           >
             <span className={styles.listItemNumber}>04.</span>
             <div>

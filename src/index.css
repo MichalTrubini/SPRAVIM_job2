@@ -67,6 +67,11 @@ li {
   background-color: #212121;
 }
 
+.siteMainNav__fix > nav > div {
+  padding-top:1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .isActive {
   animation-duration: 1s;
   animation-fill-mode: forwards;
