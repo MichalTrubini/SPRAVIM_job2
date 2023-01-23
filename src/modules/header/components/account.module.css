@@ -9,9 +9,10 @@
     border: solid 1px var(--limeGreen)
 }
 
-.accountContainer:hover {
+.accountContainer:hover, .accountContainer:focus {
     cursor: pointer;
     background-color: var(--limeGreen);
+    border-radius: 3rem;
 }
 
 .accountContainer:hover > .text {

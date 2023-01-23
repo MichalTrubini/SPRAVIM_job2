@@ -71,11 +71,12 @@
   margin-bottom: 2.4rem;
 }
 
-.button:hover {
+.button:hover, .button:focus {
   cursor: pointer;
   background-color: inherit;
   outline: 1px solid #1e1e1e;
   color: #1e1e1e;
+  border-radius: 2.6rem;
 }
 
 .social {
@@ -139,9 +140,11 @@
 
 @media screen and (min-width: 750px) {
   .footer {
-    background: url("../../assets/footer-bg@2x.webp"), var(--limeGreen);
+    background: url("../../assets/footer-bg@2x.webp"), var(--limeGreen) no-repeat;
     background-size: cover;
     background-blend-mode: color-burn;
+    background-attachment: fixed;
+    background-position: center;
   }
 
   .pattern img {

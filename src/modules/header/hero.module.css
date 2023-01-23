@@ -51,11 +51,12 @@
   display: block;
 }
 
-.link:hover {
+.link:hover, .link:focus {
   cursor: pointer;
   background-color: #1c1c1c;
   color: var(--limeGreen);
   outline: 1px solid var(--limeGreen);
+  border-radius: 26px;
 }
 
 @media screen and (min-width: 768px) {
