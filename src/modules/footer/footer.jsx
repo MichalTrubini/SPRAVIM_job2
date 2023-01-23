@@ -75,7 +75,7 @@ const Footer = () => {
                   <p className={styles.errorMessage}>Zadaný e-mail je neplatný. Skúste to ešte raz.</p>
                 </div>
               ) : null}
-              <p className={styles.gdpr}>Váš e-mail bude u nás v <Link to={'/gdpr'} className={styles.link}>bezpečí</Link>.</p>
+              <p className={styles.gdpr}>Váš e-mail bude u nás v <Link to={'/gdpr'} className={styles.link}>bezpečí</Link>.<Link to={'/pageNotFound'} className={styles.link}>404</Link></p>
             </form>
           )}
         </div>
