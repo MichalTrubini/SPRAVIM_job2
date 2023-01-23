@@ -16,7 +16,7 @@
   text-align: center;
   text-decoration: none;
   border-radius: 26px;
-  margin: 0 auto 9vh;
+  margin: 0 auto 5vh;
   max-width: 37.5rem;
   font-size: 1.8rem;
 }
@@ -33,14 +33,28 @@
 
 .pattern {
   position: absolute;
-  top: 8vh;
+  top: 4vh;
   left: 50%;
   transform: translate(-50%);
-  width: 15.8rem;
+  width: 10rem;
 }
 
 .content {
   text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+  .pattern {
+    position: absolute;
+    top: 8vh;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15.8rem;
+  }
+
+  .backLink {
+    margin: 0 auto 9vh;
+  }
 }
 
 @media screen and (min-width: 768px) {

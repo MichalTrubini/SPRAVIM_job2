@@ -31,7 +31,7 @@ const Highlights = () => {
   };
 
   useEffect(() => {
-    const highlightsSection = document.getElementById("highlightsID");
+    const highlightsSection = document.getElementById("scrollID");
     const imageOne = document.getElementById("imageContainerOne");
     const imageTwo = document.getElementById("imageContainerTwo");
     const imageThree = document.getElementById("imageContainerThree");
@@ -57,7 +57,7 @@ const Highlights = () => {
 
       function handleIntersection(entries) {
         const entry = entries[0];
-        if (entry.target.id === "highlightsID")
+        if (entry.target.id === "scrollID")
           setPositionParent(entry.boundingClientRect.top + entry.boundingClientRect.height / 2);
         if (entry.target.id === "imageContainerOne")
           setPositionImageOne(entry.boundingClientRect.top + entry.boundingClientRect.height);
@@ -92,7 +92,6 @@ const Highlights = () => {
     )
       sliderElements[2].classList.remove("isActive");
     else sliderElements[2].classList.add("isActive");
-    console.log(positionImageTwo - positionParent < 0);
   });
 
   return (
@@ -138,7 +137,7 @@ const Highlights = () => {
         </div>
       </div>
       <div  id="highlightsID" className={styles.sectionWrapper}>
-        <section  className={styles.highlights}>
+        <section id='scrollID' className={styles.highlights}>
           <div className={`${styles.container} sitePadding`}>
             <div className={styles.leftWrapper}>
               <div className={`${styles.header} ${styles.headerMobile}`}>

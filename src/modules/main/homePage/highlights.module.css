@@ -58,6 +58,7 @@
   cursor: pointer;
   background-color: inherit;
   outline: 1px solid #323232;
+  border-radius: 2.6rem;
 }
 
 .link:hover > .linkText {
