@@ -69,12 +69,13 @@
   padding: 1.6rem 0;
   font-family: inherit;
   margin-bottom: 2.4rem;
+  border: 1px solid transparent;
 }
 
 .button:hover, .button:focus {
   cursor: pointer;
   background-color: inherit;
-  outline: 1px solid #1e1e1e;
+  border: 1px solid #1e1e1e;
   color: #1e1e1e;
   border-radius: 2.6rem;
 }
