@@ -52,7 +52,7 @@
   display: block;
 }
 
-.link:hover, .link:focus {
+.link:hover, .link:focus, .link:hover, .link:active {
   cursor: pointer;
   background-color: #1c1c1c;
   color: var(--limeGreen);

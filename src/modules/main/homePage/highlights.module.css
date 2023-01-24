@@ -55,14 +55,14 @@
   font-weight: 600;
 }
 
-.link:hover, .link:focus {
+.link:hover, .link:focus, .link:active {
   cursor: pointer;
   background-color: inherit;
   border: 1px solid #323232;
   border-radius: 2.6rem;
 }
 
-.link:hover > .linkText, .link:focus > .linkText {
+.link:hover > .linkText, .link:focus > .linkText, .link:active > .linkText {
   color: #323232;
 }
 

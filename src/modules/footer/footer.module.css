@@ -72,7 +72,7 @@
   border: 1px solid transparent;
 }
 
-.button:hover, .button:focus {
+.button:hover, .button:focus, .button:active {
   cursor: pointer;
   background-color: inherit;
   border: 1px solid #1e1e1e;
