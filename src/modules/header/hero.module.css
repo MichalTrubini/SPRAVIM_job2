@@ -65,7 +65,7 @@
     max-width: 80rem;
     top: unset;
     bottom: 0;
-    right: 0;
+    right: -10rem;
     width: 100%;
     left: unset;
     transform: translateX(0);
@@ -81,7 +81,7 @@
 
   .pattern {
     top: -5rem;
-    right: 7.2rem;
+    right: 17.5rem;
     width: 21rem;
   }
 }
@@ -94,5 +94,9 @@
 }
 
 @media screen and (min-width: 1440px) {
-
+.hero {
+  max-width: 144rem;
+  margin: auto;
+  position: unset;
+}
 }
