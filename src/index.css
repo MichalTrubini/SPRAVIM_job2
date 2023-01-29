@@ -78,6 +78,10 @@ li {
   animation-name: slideFromBottom;
 }
 
+.overflowHidden {
+  overflow: hidden;
+}
+
 @keyframes slideFromBottom {
   0% {
     opacity: 0;

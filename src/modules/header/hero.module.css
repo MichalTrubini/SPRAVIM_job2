@@ -91,13 +91,23 @@
   .pattern {
     top: 35rem;
   }
-
 }
 
 @media screen and (min-width: 1440px) {
 .hero {
   max-width: 144rem;
   margin: auto;
-  position: unset;
+}
+
+.imageContainer {
+  right: calc(100vw - 1540px);
 }
 }
+
+@media screen and (min-width: 1540px) {
+
+  .imageContainer {
+    right: 0;
+  }
+  }
+  

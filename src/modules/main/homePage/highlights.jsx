@@ -8,10 +8,11 @@ import { useEffect, useState } from "react";
 const Highlights = () => {
   const { width } = useWindowDimensions();
   const [positionParent, setPositionParent] = useState(0);
+  const [positionHighlights, setPositionHighlights] = useState(0);
   const [positionImageOne, setPositionImageOne] = useState(0);
   const [positionImageTwo, setPositionImageTwo] = useState(0);
-  const [positionImageThree, setPositionImageThree] = useState(0);
   const [elementHeight, setElementHeight] = useState(0);
+  const [headerHeight, setHeaderHeight] = useState(0);
   const headerWidth = width * 0.44;
 
   const scrollHandler = (item) => {
@@ -31,21 +32,23 @@ const Highlights = () => {
   };
 
   useEffect(() => {
-    const highlightsSection = document.getElementById("scrollID");
+    const scrollableSection = document.getElementById("scrollID");
+    const highlightsSection = document.getElementById("highlightsID");
+    const header = document.getElementById("siteMainNav");
     const imageOne = document.getElementById("imageContainerOne");
     const imageTwo = document.getElementById("imageContainerTwo");
-    const imageThree = document.getElementById("imageContainerThree");
 
     //set element height
 
     setElementHeight(imageOne.getBoundingClientRect().height);
+    setHeaderHeight(header.getBoundingClientRect().height);
 
     //get position of elements
 
     window.addEventListener("scroll", handleScroll);
-    highlightsSection.addEventListener("scroll", handleScroll);
+    scrollableSection.addEventListener("scroll", handleScroll);
     return () => {
-      highlightsSection.removeEventListener("scroll", handleScroll);
+      scrollableSection.removeEventListener("scroll", handleScroll);
       window.removeEventListener("scroll", handleScroll);
     };
 
@@ -63,18 +66,21 @@ const Highlights = () => {
           setPositionImageOne(entry.boundingClientRect.top + entry.boundingClientRect.height);
         if (entry.target.id === "imageContainerTwo")
           setPositionImageTwo(entry.boundingClientRect.top + entry.boundingClientRect.height);
-        if (entry.target.id === "imageContainerThree")
-          setPositionImageThree(entry.boundingClientRect.top + entry.boundingClientRect.height);
+          if (entry.target.id === "highlightsID")
+          setPositionHighlights(entry.boundingClientRect.top - headerHeight);
       }
 
-      observerOne.observe(highlightsSection);
+      observerOne.observe(scrollableSection);
       observerTwo.observe(imageOne);
       observerThree.observe(imageTwo);
-      observerFour.observe(imageThree);
+      observerFour.observe(highlightsSection);
     }
-  }, [positionParent, positionImageOne, positionImageTwo, positionImageThree]);
+  }, [positionParent, positionImageOne, positionImageTwo, positionHighlights, headerHeight]);
 
   useEffect(() => {
+
+    //logic that controls animation in the highlights section on scroll
+
     const sliderElements = document.querySelectorAll('[data-act="animate"]');
     if (positionImageOne - positionParent < 0) {sliderElements[0].classList.remove("isActive")}
     else {sliderElements[0].classList.remove("isPrev");sliderElements[0].classList.add("isActive")};
@@ -92,6 +98,7 @@ const Highlights = () => {
     )
       sliderElements[2].classList.remove("isActive");
     else sliderElements[2].classList.add("isActive");
+
   });
 
   return (
