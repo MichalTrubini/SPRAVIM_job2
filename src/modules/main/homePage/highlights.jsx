@@ -66,8 +66,7 @@ const Highlights = () => {
           setPositionImageOne(entry.boundingClientRect.top + entry.boundingClientRect.height);
         if (entry.target.id === "imageContainerTwo")
           setPositionImageTwo(entry.boundingClientRect.top + entry.boundingClientRect.height);
-          if (entry.target.id === "highlightsID")
-          setPositionHighlights(entry.boundingClientRect.top - headerHeight);
+        if (entry.target.id === "highlightsID") setPositionHighlights(entry.boundingClientRect.top - headerHeight);
       }
 
       observerOne.observe(scrollableSection);
@@ -78,31 +77,35 @@ const Highlights = () => {
   }, [positionParent, positionImageOne, positionImageTwo, positionHighlights, headerHeight]);
 
   useEffect(() => {
-
     //logic that controls animation in the highlights section on scroll
 
     const sliderElements = document.querySelectorAll('[data-act="animate"]');
-    if (positionImageOne - positionParent < 0) {sliderElements[0].classList.remove("isActive")}
-    else {sliderElements[0].classList.remove("isPrev");sliderElements[0].classList.add("isActive")};
+    if (positionImageOne - positionParent < 0) {
+      sliderElements[0].classList.remove("isActive");
+    } else {
+      sliderElements[0].classList.remove("isPrev");
+      sliderElements[0].classList.add("isActive");
+    }
 
     if (
       sliderElements[1].previousElementSibling.classList.contains("isActive") ||
       positionImageTwo - positionParent < 0
     )
       sliderElements[1].classList.remove("isActive");
-    else if (positionImageTwo - positionParent > 0) {sliderElements[1].classList.add("isActive")};
-    
+    else if (positionImageTwo - positionParent > 0) {
+      sliderElements[1].classList.add("isActive");
+    }
+
     if (
       sliderElements[1].previousElementSibling.classList.contains("isActive") ||
       sliderElements[2].previousElementSibling.classList.contains("isActive")
     )
       sliderElements[2].classList.remove("isActive");
     else sliderElements[2].classList.add("isActive");
-
   });
 
   return (
-    <div  style={{ position: "relative" }}>
+    <div style={{ position: "relative" }}>
       <div
         style={{ width: `${headerWidth}px`, height: `${elementHeight}px` }}
         className={`${styles.header} ${styles.headerDesktop} sitePadding`}
@@ -143,8 +146,11 @@ const Highlights = () => {
           </div>
         </div>
       </div>
-      <div  id="highlightsID" className={styles.sectionWrapper}>
-        <section id='scrollID' className={styles.highlights}>
+      <div id="highlightsID" className={styles.sectionWrapper} >
+        <section
+          id="scrollID"
+          className={styles.highlights}
+        >
           <div className={`${styles.container} sitePadding`}>
             <div className={styles.leftWrapper}>
               <div className={`${styles.header} ${styles.headerMobile}`}>
