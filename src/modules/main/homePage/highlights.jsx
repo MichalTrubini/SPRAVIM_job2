@@ -42,7 +42,7 @@ const Highlights = () => {
     function handleScroll() {
       const imageOneTop =
         imageOne.getBoundingClientRect().top + imageOne.getBoundingClientRect().height / 2 - headerHeight;
-      const imageTwoTop = imageTwo.getBoundingClientRect().top - headerHeight;
+      const imageTwoTop = imageTwo.getBoundingClientRect().top +headerHeight;
 
       if (imageOneTop < 0) setThresholdImageOne(true);
       else setThresholdImageOne(false);
@@ -50,8 +50,6 @@ const Highlights = () => {
       else setThresholdImageTwo(false);
     }
   }, []);
-
-  console.log(tresholdImageTwo);
 
   useEffect(() => {
     //logic that controls animation in the highlights section on scroll
