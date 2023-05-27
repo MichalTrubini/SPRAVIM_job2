@@ -31,6 +31,26 @@ const Highlights = () => {
     //set header height
 
     const headerHeight = 74;
+   
+    const observer = new PerformanceObserver((list) => {
+      list.getEntries().forEach((entry) => {
+        if (entry.type === "reload") {
+          console.log(`${entry.name} was reloaded!`);
+          console.log(entry);
+        }
+      });
+    });
+    
+    observer.observe({ type: "navigation", buffered: true });
+
+    if (window.performance) {
+      console.info("window.performance works fine on this browser");
+    }
+    if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+      console.info( "This page is reloaded" );
+    } else {
+      console.info( "This page is not reloaded");
+    }
 
     //get threshold of elements
 
@@ -99,6 +119,8 @@ const Highlights = () => {
       </p>
     </>
   );
+
+  
   return (
     <section id="highlightsID" className={styles.section}>
       <div className={`${styles.sectionWrapper} sitePadding`}>
