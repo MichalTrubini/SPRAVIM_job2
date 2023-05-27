@@ -8,14 +8,14 @@ const Highlights = () => {
   const [tresholdImageOne, setThresholdImageOne] = useState(false);
   const [tresholdImageTwo, setThresholdImageTwo] = useState(false);
 
-  const scrollHandler = (item) => {
+  const scrollHandler = (item:string) => {
     const element = document.getElementById(item);
     const siteMainNav = document.getElementById("siteMainNav");
-    let headerOffset = siteMainNav.offsetHeight;
-    let elementPosition = element.getBoundingClientRect().top;
+    let headerOffset = siteMainNav!.offsetHeight;
+    let elementPosition = element!.getBoundingClientRect().top;
     let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-    function windowScroll(item) {
+    function windowScroll() {
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth",
@@ -31,28 +31,6 @@ const Highlights = () => {
     //set header height
 
     const headerHeight = 74;
-   
-    const observer = new PerformanceObserver((list) => {
-      list.getEntries().forEach((entry) => {
-        if (entry.type === "reload") {
-          console.log(`${entry.name} was reloaded!`);
-          console.log(entry);
-        }
-      });
-    });
-    
-    observer.observe({ type: "navigation", buffered: true });
-
-    if (window.performance) {
-      console.info("window.performance works fine on this browser");
-    }
-    if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
-      console.info( "This page is reloaded" );
-    } else {
-      console.info( "This page is not reloaded");
-    }
-
-    //get threshold of elements
 
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -61,8 +39,8 @@ const Highlights = () => {
 
     function handleScroll() {
       const imageOneTop =
-        imageOne.getBoundingClientRect().top + imageOne.getBoundingClientRect().height / 2 - headerHeight;
-      const imageTwoTop = imageTwo.getBoundingClientRect().top +headerHeight;
+        imageOne!.getBoundingClientRect().top + imageOne!.getBoundingClientRect().height / 2 - headerHeight;
+      const imageTwoTop = imageTwo!.getBoundingClientRect().top +headerHeight;
 
       if (imageOneTop < 0) setThresholdImageOne(true);
       else setThresholdImageOne(false);
@@ -81,7 +59,7 @@ const Highlights = () => {
       sliderElements[0].classList.remove("isActive");
     }
 
-    if (sliderElements[1].previousElementSibling.classList.contains("isActive"))
+    if (sliderElements[1].previousElementSibling!.classList.contains("isActive"))
       sliderElements[1].classList.remove("isActive");
     else if (tresholdImageTwo === false) sliderElements[1].classList.add("isActive");
     else sliderElements[1].classList.remove("isActive");

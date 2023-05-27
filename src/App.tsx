@@ -1,10 +1,10 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
 import PageNotFound from './pages/pageNotFound';
 import GDPR from './pages/gdpr';
 import Home from './pages/home';
 
 
-function App() {
+function App(): JSX.Element {
   return (
     <Routes>
       <Route path='/' element={<Home/>}/>

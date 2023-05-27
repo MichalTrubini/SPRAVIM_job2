@@ -1,4 +1,5 @@
-import styles from './privacyPolicy.module.css'
+import styles from './privacyPolicy.module.css';
+
 const PrivacyPolicy = () => {
   return (
     <section className={styles.section}>

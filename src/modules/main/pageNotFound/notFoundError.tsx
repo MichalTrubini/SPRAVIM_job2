@@ -9,7 +9,7 @@ const NotFoundError = () => {
 
   useEffect(() => {
     const siteHeader = document.getElementById("siteMainNav");
-    const siteHeaderHeight = siteHeader.getBoundingClientRect().height;
+    const siteHeaderHeight = siteHeader!.getBoundingClientRect().height;
     setElHeight(siteHeaderHeight);
   }, [elHeight]);
 

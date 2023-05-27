@@ -21,7 +21,7 @@ const Footer = () => {
     return regex.test(email.email);
   }
 
-  const formValidationHandler = (e) => {
+  const formValidationHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormSubmit(true)
     const nextFormState = {
@@ -31,7 +31,7 @@ const Footer = () => {
     setEmail(nextFormState);
   };
 
-  const inputHandler = (e) => {
+  const inputHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     const nextFormState = {
       ...email,
       [e.target.name]: e.target.value,
@@ -69,7 +69,7 @@ const Footer = () => {
                 value={email.email}
               />
               <button className={styles.button}>Potvrdiť</button>
-              {!email.isValid & formSubmit ? (
+              {!email.isValid && formSubmit ? (
                 <div className={styles.error}>
                   <img src={infoIcon} alt="info" />
                   <p className={styles.errorMessage}>Zadaný e-mail je neplatný. Skúste to ešte raz.</p>
@@ -85,7 +85,7 @@ const Footer = () => {
           <a href='/' target="_blank"><img src={instagramLogo} alt="instagram" className={styles.socialIcon}/></a>
         </div>
       </div>
-      <Copyright />
+      <Copyright className={null}/>
     </footer>
   );
 };

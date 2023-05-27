@@ -1,7 +1,7 @@
 import styles from "./menu.module.css";
 import { Link } from "react-scroll";
 
-const Menu = (props) => {
+const Menu:React.FC<{onClickClose: () => {}}> = (props) => {
   
   const close = () => {
     if (window.innerWidth < 1025) {
