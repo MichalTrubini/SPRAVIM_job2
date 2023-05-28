@@ -9,7 +9,7 @@ import { useHref } from "react-router-dom";
 const Header = () => {
   const { width } = useWindowDimensions();
   const mobileBreakpoint = 1024;
-  const urlRef = useHref()
+  const urlRef = useHref('/')
 
   useEffect(() => {
     const siteMainNav = document.getElementById("siteMainNav");
@@ -19,9 +19,9 @@ const Header = () => {
       let currentScrollPosition = window.pageYOffset;
 
       if (currentScrollPosition > baseScrollTop) {
-        siteMainNav.classList.add("siteMainNav__fix");
+        siteMainNav!.classList.add("siteMainNav__fix");
       } else {
-        siteMainNav.classList.remove("siteMainNav__fix");
+        siteMainNav!.classList.remove("siteMainNav__fix");
       }
     }
 

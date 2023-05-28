@@ -42,15 +42,15 @@ const Hero = () => {
     },
   }
 
-  const scrollHandler = (item) => {
+  const scrollHandler = (item:string) => {
     const element = document.getElementById(item);
     const siteMainNav = document.getElementById("siteMainNav");
 
-    let headerOffset = siteMainNav.offsetHeight;
-    let elementPosition = element.getBoundingClientRect().top;
+    let headerOffset = siteMainNav!.offsetHeight;
+    let elementPosition = element!.getBoundingClientRect().top;
     let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-    function windowScroll(item) {
+    function windowScroll() {
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth",

@@ -8,7 +8,7 @@ const DesktopView = () => {
   return (
     <div className={`${styles.desktop} sitePadding flexCenter`}>
       <SiteLogo />
-      <Menu />
+      <Menu onClickClose={()=>{}}/>
       <Account />
     </div>
   );
