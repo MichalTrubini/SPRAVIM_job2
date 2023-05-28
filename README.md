@@ -4,15 +4,15 @@ This project was created using zeplin design.
 
 ## Tech stack
 
-* React.js
+* React.js with typescript
 
 ## Features
 
 Main app features are:
 
-* multi-page app
-* user can create a subscription plan and submit it
-* validation handling in case user has not selected all mandatory options
+* SPA landing page with responsive design
+* motion framer used for animations
+* email validation
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
