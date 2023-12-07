@@ -43,7 +43,6 @@
   display: grid;
   place-content: center;
   border-radius: 100%;
-
 }
 
 .playIcon:hover {
@@ -97,6 +96,10 @@
     gap: 2.2rem;
   }
 
+  .headingContainer {
+    min-width: 7.5rem;
+  }
+
   .heading {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -107,6 +110,10 @@
 
   .headingFix {
     display: block;
+  }
+
+  .mainContent{
+    min-width: 78.3rem;
   }
 }
 
